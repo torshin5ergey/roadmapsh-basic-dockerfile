@@ -38,8 +38,7 @@ Hello, Captain!
 
 4. *Advanced*. Run with ability to pass your name to the Docker image as an argument, and have the Docker image print `Hello, [your name]!` instead of `Hello, Captain!`.
 ```bash
-# -e, --env pass environment variable, that is used as username (default is Captain)
-docker run --rm -e USERNAME=Sergey basic-dockerfile
+docker run --rm basic-dockerfile Sergey
 # output
 Hello, Sergey!
 ```
